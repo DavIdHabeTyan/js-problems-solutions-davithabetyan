@@ -1,0 +1,22 @@
+{
+  "name": "homework02_david_habetyan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavIdHabeTyan/homework02_David_Habetyan.git"
+  },
+  "author": "David Habetyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavIdHabeTyan/homework02_David_Habetyan/issues"
+  },
+  "homepage": "https://github.com/DavIdHabeTyan/homework02_David_Habetyan#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
