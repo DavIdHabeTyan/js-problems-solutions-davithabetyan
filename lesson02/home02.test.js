@@ -10,13 +10,13 @@ const {
     bubbleSort,
     swapCharacters
 
-} = require ('./home02.js');
+} = require('./home02.js');
 
-describe ("Homework 2", function() {
+describe("Homework 2", function () {
 
     // 1. Write a function that reverses a number
-    describe( "1. reversTheNumber(number)", () => {
-        test ("test 1. adds 45677 to equal 77654", () => {
+    describe("1. reversTheNumber(number)", () => {
+        test("test 1. adds 45677 to equal 77654", () => {
             const actual = reversTheNumber(45677);
             const expected = "77654";
             expect(actual).toEqual(expected);
@@ -145,7 +145,7 @@ describe ("Homework 2", function() {
     //9. write a JavaScript program to charge the characters in a string where a turns into z;
     describe("09. swapCharecters(alphabet, text)", () => {
 
-        test( "test 1. add text to equal word a to word z, n to m... ", () => {
+        test("test 1. add text to equal word a to word z, n to m... ", () => {
             const alphabet = {
                 A: "Z",
                 B: "Y",
