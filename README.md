@@ -1,1 +1,1 @@
-# homework02_David_Habetyan
+# js-problems-solutions-davithabetyan
