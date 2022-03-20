@@ -15,11 +15,12 @@ module.exports =  {
 function reversTheNumber(number) {
     let str = number + ""
     let result = str.split("").reverse().join("")
-    if (result.substring(0, 1) === "0") {
-        return result.substring(1, result.length)
-    } else {
-        return result
-    }
+    // if (result.substring(0, 1) === "0") {
+    //     return result.substring(1, result.length)
+    // } else {
+    //     return result
+    // }
+    return +result
 }
 // Homework 2
 function isPalindrom(text) {
@@ -70,7 +71,7 @@ function isLastDigitsSame(...number) {
         }
     });
 
-    if (lastNumber === false) {
+    if (lastNumber !== false) {
         return true
     } else {
         return false

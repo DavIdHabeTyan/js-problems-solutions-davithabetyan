@@ -18,14 +18,14 @@ describe("Homework 2", function () {
     describe("1. reversTheNumber(number)", () => {
         test("test 1. adds 45677 to equal 77654", () => {
             const actual = reversTheNumber(45677);
-            const expected = "77654";
+            const expected = 77654;
             expect(actual).toEqual(expected);
 
         });
 
         test("test 2. adds 47890 to equal 9874", () => {
             const actual = reversTheNumber(47890);
-            const expected = "9874";
+            const expected = 9874;
             expect(actual).toEqual(expected);
         });
     })
