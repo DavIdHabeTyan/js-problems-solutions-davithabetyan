@@ -11,7 +11,7 @@ const {
     twoTypeDivision
 
 
-} = require('./home03');
+} = require('./primitivtypes');
 
 describe("Homework 3", () => {
 // Part 2. Working with variables
@@ -21,7 +21,9 @@ describe("Homework 3", () => {
             const expected = "John"
             expect(actual).toEqual(expected);
 
+
         })
+
     })
 // What will be output of i and n?
     describe("2. outputIandN(numb)", () => {
@@ -49,6 +51,7 @@ describe("Homework 3", () => {
             const actual = addNumb2(a, b);
             const expected = {a: 3, b: 10};
             expect(actual).toEqual(expected);
+            //asdasdasd
 
         })
 

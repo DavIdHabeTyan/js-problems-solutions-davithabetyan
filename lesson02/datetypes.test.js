@@ -10,7 +10,7 @@ const {
     bubbleSort,
     swapCharacters
 
-} = require('./home02.js');
+} = require('./datetypes.js');
 
 describe("Homework 2", function () {
 
