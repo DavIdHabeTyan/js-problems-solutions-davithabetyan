@@ -1,4 +1,8 @@
-///Matrix Spiral
+module.exports = {
+    matrix
+
+}
+
 function matrix(n) {
     let result = [];
     for (let i = 0; i < n; i++) {
@@ -39,4 +43,3 @@ function matrix(n) {
     }
     return result
 }
-console.log(matrix(4))
