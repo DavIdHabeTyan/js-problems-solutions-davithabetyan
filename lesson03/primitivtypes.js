@@ -1,6 +1,6 @@
 module.exports = {
     changeValue,
-    outputIandN,
+    outputNumb,
     addNumb,
     addNumb2,
     ucFirst,
@@ -22,7 +22,7 @@ function changeValue(adminName) {
 }
 
 // What will be output of i and n?
-function outputIandN(numb) {
+function outputNumb(numb) {
     let i = numb;
     let n = i++ % 10;
     return {i, n}
@@ -31,19 +31,18 @@ function outputIandN(numb) {
 
 // Swap two variables
 function addNumb(numb1, numb2) {
-    let a = numb1, b = numb2;
     let c = numb1 + numb2;
-    b = c - b;
-    a = c - a
-    return {a, b};
+    numb2 = c - numb2;
+    numb1 = c - numb1
+    return {numb1, numb2};
 }
 
 //Swap two variables without using the third one
 
 function addNumb2(numb1, numb2) {
-    let a = numb1, b = numb2;
-    [a, b] = [b, a];
-    return {a, b};
+
+    [numb1, numb2] = [numb2, numb1];
+    return {numb1, numb2};
 }
 
 //string

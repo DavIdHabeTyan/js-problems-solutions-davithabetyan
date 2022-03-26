@@ -1,6 +1,6 @@
 const {
     changeValue,
-    outputIandN,
+    outputNumb,
     addNumb,
     addNumb2,
     ucFirst,
@@ -28,7 +28,7 @@ describe("Homework 3", () => {
 // What will be output of i and n?
     describe("2. outputIandN(numb)", () => {
         test(" add number iqEual i and n", () => {
-            const actual = outputIandN(10);
+            const actual = outputNumb(10);
             const expected = {i: 11, n: 0};
             expect(actual).toEqual(expected);
         })
@@ -37,21 +37,21 @@ describe("Homework 3", () => {
 //Swap two variables
     describe("3. addNumb(10, 3)", () => {
         test("test 1 add  2 number and reverse  equal reverse number", () => {
-            let a = 10, b = 3
-            const actual = addNumb(a, b);
-            const expected = {a: 3, b: 10};
+            let numb1 = 10, numb2 = 3
+            const actual = addNumb(numb1, numb2);
+            const expected = {numb1: 3, numb2: 10};
             expect(actual).toEqual(expected);
         })
 
     })
     //Swap two variables without using the third one
     describe("4. addNumb2(10,3)", () => {
-        test("tets 2 and 2 number and reverse equal reverse number", () => {
-            let a = 10, b = 3;
-            const actual = addNumb2(a, b);
-            const expected = {a: 3, b: 10};
+        test("test 2 and 2 number and reverse equal reverse number", () => {
+            let numb1 = 10, numb2 = 3;
+            const actual = addNumb2(numb1, numb2);
+            const expected = {numb1: 3, numb2: 10};
             expect(actual).toEqual(expected);
-            //asdasdasd
+
 
         })
 
@@ -113,7 +113,7 @@ describe("Homework 3", () => {
 
 // Two type sum
     describe("twoTypeSum(string, boolean, null + number)", () => {
-        test("test 1. add strin, number to equal value", () => {
+        test("test 1. add string, number to equal value", () => {
             const actual = twoTypeSum("-9", 5);
             const expected = "-95";
             expect(actual).toEqual(expected);
