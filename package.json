@@ -1,0 +1,22 @@
+{
+  "name": "js-problems-solutions-davithabetyan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavIdHabeTyan/js-problems-solutions-davithabetyan.git"
+  },
+  "author": "David Habetyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavIdHabeTyan/js-problems-solutions-davithabetyan/issues"
+  },
+  "homepage": "https://github.com/DavIdHabeTyan/js-problems-solutions-davithabetyan#readme",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
+}
