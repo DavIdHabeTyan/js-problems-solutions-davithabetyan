@@ -11,25 +11,25 @@ function matrix(n) {
     //variables
     let value = 1;
     let left_Column = 0;
-    let rigth_Column = n - 1;
+    let right_Column = n - 1;
     let top_Row = 0;
     let bottom_Row = n - 1;
     //loop
-    while (left_Column <= rigth_Column && top_Row <= bottom_Row) {
+    while (left_Column <= right_Column && top_Row <= bottom_Row) {
         /// Top Row
-        for (let i = left_Column; i <= rigth_Column; i++) {
+        for (let i = left_Column; i <= right_Column; i++) {
             result[top_Row][i] = value;
             value++;
         }
         top_Row++;
         ///Rigth Column
         for (let i = top_Row; i <= bottom_Row; i++) {
-            result[i][rigth_Column] = value;
+            result[i][right_Column] = value;
             value++
         }
-        rigth_Column--;
+        right_Column--;
         // Bootom Row
-        for (let i = rigth_Column; i >= left_Column; i--) {
+        for (let i = right_Column; i >= left_Column; i--) {
             result[bottom_Row][i] = value;
             value++
         }
