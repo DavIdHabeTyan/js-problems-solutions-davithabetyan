@@ -10,36 +10,36 @@ function matrix(n) {
     }
     //variables
     let value = 1;
-    let left_Column = 0;
-    let right_Column = n - 1;
-    let top_Row = 0;
-    let bottom_Row = n - 1;
+    let leftColumn = 0;
+    let rightColumn = n - 1;
+    let topRow = 0;
+    let bottomRow = n - 1;
     //loop
-    while (left_Column <= right_Column && top_Row <= bottom_Row) {
+    while (leftColumn <= rightColumn && topRow <= bottomRow) {
         /// Top Row
-        for (let i = left_Column; i <= right_Column; i++) {
-            result[top_Row][i] = value;
+        for (let i = leftColumn; i <= rightColumn; i++) {
+            result[topRow][i] = value;
             value++;
         }
-        top_Row++;
+        topRow++;
         ///Rigth Column
-        for (let i = top_Row; i <= bottom_Row; i++) {
-            result[i][right_Column] = value;
+        for (let i = topRow; i <= bottomRow; i++) {
+            result[i][rightColumn] = value;
             value++
         }
-        right_Column--;
-        // Bootom Row
-        for (let i = right_Column; i >= left_Column; i--) {
-            result[bottom_Row][i] = value;
+        rightColumn--;
+        // buttom Row
+        for (let i = rightColumn; i >= leftColumn; i--) {
+            result[bottomRow][i] = value;
             value++
         }
-        bottom_Row--;
+        bottomRow--;
         //Left Column
-        for (let i = bottom_Row; i >= top_Row; i--) {
-            result[i][left_Column] = value;
+        for (let i = bottomRow; i >= topRow; i--) {
+            result[i][leftColumn] = value;
             value++;
         }
-        left_Column++
+        leftColumn++
     }
     return result
 }
