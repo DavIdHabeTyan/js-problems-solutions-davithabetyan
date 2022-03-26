@@ -60,7 +60,7 @@ describe("Homework 3", () => {
 //string
 //Uppercase the first character
     describe("ucFirst(john) ", () => {
-        test("add loWercasse name to equal toUppercase Name", () => {
+        test("add lowercasse name to equal toUppercase Name", () => {
             const actual = ucFirst("john");
             const expected = "John";
             expect(actual).toEqual(expected);

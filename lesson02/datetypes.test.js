@@ -1,6 +1,6 @@
 const {
     reversTheNumber,
-    isPalindrom,
+    checkReversText,
     isBlank,
     stringToArray,
     abbreviateName,
@@ -34,15 +34,15 @@ describe("Homework 2", function () {
         2. Write a function that checks whether a passed string is palindrom or not?
        A palindrom is a word, phrase, or sequence that reads the same backwords as forward
     */
-    describe("2. isPalindrom(text)", () => {
+    describe("2. checkReversText(text)", () => {
         test("test 1. add madam to equal true ", () => {
-            const actual = isPalindrom("madam");
+            const actual = checkReversText("madam");
             const expected = true;
             expect(actual).toEqual(expected);
         });
 
         test("test 2. add nurse to equal false", () => {
-            const actual = isPalindrom("nurse");
+            const actual = checkReversText("nurse");
             const expected = false;
             expect(actual).toEqual(expected);
         });
@@ -146,37 +146,9 @@ describe("Homework 2", function () {
     describe("09. swapCharecters(alphabet, text)", () => {
 
         test("test 1. add text to equal word a to word z, n to m... ", () => {
-            const alphabet = {
-                A: "Z",
-                B: "Y",
-                C: "X",
-                D: "W",
-                E: "V",
-                F: "U",
-                G: "T",
-                H: "S",
-                I: "R",
-                J: "Q",
-                K: "P",
-                L: "O",
-                M: "N",
-                N: "M",
-                O: "L",
-                P: "K",
-                Q: "J",
-                R: "I",
-                S: "H",
-                T: "G",
-                U: "F",
-                V: "E",
-                W: "D",
-                X: "C",
-                Y: "B",
-                Z: "A"
-            };
-            const text = "web development";
 
-            const actual = swapCharacters(alphabet, text);
+            const text = "web development";
+            const actual = swapCharacters(text);
             const expected = "dvy wvevolknvmg"
             expect(actual).toEqual(expected);
         })
