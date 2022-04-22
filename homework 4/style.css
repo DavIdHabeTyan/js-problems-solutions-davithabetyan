@@ -1,0 +1,39 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+#container div{
+
+    padding: 10px;
+    border: 1px solid silver;
+}
+
+#header{
+    flex: 1;
+
+}
+
+#main{
+    flex: 2;
+}
+
+#footer{
+    flex: 1;
+}
+
+.main__ol>li{
+    padding: 5px;
+    font-size: 30px;
+    /*text-decoration: line-through;*/
+}
+.main__date{
+
+}
+.titleHeader{
+
+    text-align: center;
+}
+
